@@ -7,11 +7,11 @@ module.exports = class FooCommand extends Command {
         this.aliases = [ 'afoobar' ];
     }
 
-    * interact(input, output) {
+    interact(input, output) {
         output.writeln('interact called');
     }
 
-    * execute(input, output) {
+    execute(input, output) {
         this.input = input;
         this.output = output;
 
